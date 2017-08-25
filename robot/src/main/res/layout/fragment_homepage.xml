@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mar_44"
+        android:background="@color/main_text_check">
+
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mar_15"
+            android:src="@mipmap/location"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_location"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mar_10"
+            android:textSize="@dimen/txt_15"
+            android:textColor="@color/white"
+            android:text="上海"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mar_35"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_search"
+            android:layout_toRightOf="@+id/tv_location"
+            android:layout_toLeftOf="@+id/rl_message"
+            android:layout_marginLeft="@dimen/mar_30"
+            android:layout_marginRight="@dimen/mar_30">
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/search"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/mar_15"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/mar_15"
+                android:layout_toRightOf="@+id/iv_search"
+                android:hint="机器人/配件/店铺"
+                android:textSize="@dimen/txt_15"
+                android:background="@null"
+                android:layout_marginLeft="@dimen/mar_5"
+                android:textColor="@color/txt9"
+                android:gravity="center_vertical"/>
+
+            </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_message"
+            android:layout_width="@dimen/mar_25"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/mar_15">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/message"
+                android:layout_marginTop="@dimen/mar_2"
+                android:layout_marginRight="@dimen/mar_2"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/red"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mar_150"
+        android:background="@color/white">
+
+    </com.youth.banner.Banner>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mar_156"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/blue_ll"
+                        android:layout_marginTop="@dimen/mar_15"
+                        android:layout_marginLeft="@dimen/mar_15"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/mar_10"
+                        android:layout_marginTop="@dimen/mar_15"
+                        android:textSize="@dimen/txt_16"
+                        android:textColor="@color/txt3"
+                        android:layout_toRightOf="@+id/iv_ll"
+                        android:text="热门工程师"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/mar_10"
+                        android:layout_marginTop="@dimen/mar_15"
+                        android:textSize="@dimen/txt_15"
+                        android:textColor="@color/txt6"
+                        android:layout_alignParentRight="true"
+                        android:text="更多"/>
+
+                </RelativeLayout>
+
+                <!--<HorizontalScrollView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginTop="@dimen/mar_10"-->
+                    <!--android:layout_marginBottom="@dimen/mar_10"-->
+                    <!--android:layout_marginLeft="@dimen/mar_20">-->
+
+
+                <!--</HorizontalScrollView>-->
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

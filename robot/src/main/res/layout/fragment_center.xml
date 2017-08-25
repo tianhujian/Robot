@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mar_150"
+        android:background="@color/main_text_check">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/set"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/mar_15"
+            android:layout_marginTop="@dimen/mar_15"/>
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="@dimen/mar_80"
+            android:layout_height="@dimen/mar_80"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/mar_15"
+            android:layout_marginBottom="@dimen/mar_15"/>
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_14"
+            android:textColor="@color/white"
+            android:text="手机号：15674992411"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/iv_head"
+            android:layout_marginBottom="@dimen/mar_20"
+            android:layout_marginLeft="@dimen/mar_15"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_phone"
+            android:text="用户名李建军"
+            android:layout_toRightOf="@+id/iv_head"
+            android:layout_marginLeft="@dimen/mar_15"
+            android:layout_marginBottom="@dimen/mar_15"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_18"/>
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mar_70"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/mar_50"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/main_text_check"
+            android:layout_marginLeft="@dimen/mar_5">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/order"
+                android:id="@+id/imageView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mar_6"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_15"
+                android:text="我的订单"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/mar_50"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/main_text_check"
+            android:layout_marginLeft="@dimen/mar_5"
+            android:layout_marginRight="@dimen/mar_5">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wallet"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mar_6"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_15"
+                android:text="我的账户"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mar_10"
+        android:background="@color/bge" />
+    
+    <RelativeLayout
+        style="@style/fragment_center_rl">
+        
+        <ImageView
+            android:id="@+id/iv_serve"
+            style="@style/fragment_center_img"
+            android:src="@drawable/serve"/>
+
+        <TextView
+            style="@style/fragment_center_txt"
+            android:layout_toRightOf="@+id/iv_serve"
+            android:text="购买服务"/>
+
+        <ImageView
+            style="@style/fragment_center_img_back" />
+        
+        <TextView
+            style="@style/ll" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/fragment_center_rl">
+
+        <ImageView
+            android:id="@+id/iv_adress"
+            style="@style/fragment_center_img"
+            android:src="@drawable/adress"/>
+
+        <TextView
+            style="@style/fragment_center_txt"
+            android:layout_toRightOf="@+id/iv_adress"
+            android:text="地址管理"/>
+
+        <ImageView
+            style="@style/fragment_center_img_back" />
+
+        <TextView
+            style="@style/ll" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/fragment_center_rl">
+
+        <ImageView
+            android:id="@+id/iv_ac"
+            style="@style/fragment_center_img"
+            android:src="@drawable/activity"/>
+
+        <TextView
+            style="@style/fragment_center_txt"
+            android:layout_toRightOf="@+id/iv_ac"
+            android:text="最新活动"/>
+
+        <ImageView
+            style="@style/fragment_center_img_back" />
+
+        <TextView
+            style="@style/ll" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/fragment_center_rl">
+
+        <ImageView
+            android:id="@+id/iv_service"
+            style="@style/fragment_center_img"
+            android:src="@drawable/service"/>
+
+        <TextView
+            style="@style/fragment_center_txt"
+            android:layout_toRightOf="@+id/iv_service"
+            android:text="在线咨询"/>
+
+        <ImageView
+            style="@style/fragment_center_img_back" />
+
+        <TextView
+            style="@style/ll" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/fragment_center_rl">
+
+        <ImageView
+            android:id="@+id/iv_abount"
+            style="@style/fragment_center_img"
+            android:src="@drawable/about_me"/>
+
+        <ImageView
+            style="@style/fragment_center_img_back" />
+
+        <TextView
+            style="@style/fragment_center_txt"
+            android:layout_toRightOf="@+id/iv_abount"
+            android:text="在线咨询"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

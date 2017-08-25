@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/toobars"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/main_text_check">
+
+        <ImageView
+            android:id="@+id/go_backs"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/mar_15"
+            android:paddingRight="@dimen/mar_15"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/back"/>
+
+        <TextView
+            android:id="@+id/tob_titles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_16"/>
+
+        <ImageView
+            android:id="@+id/tob_menus"
+            android:layout_width="@dimen/mar_25"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/mar_15"/>
+
+        <TextView
+            android:id="@+id/menu_txts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:layout_marginRight="@dimen/mar_15"/>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:fitsSystemWindows"> true </item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="activity_main_radiobutton">
+        <item name="android:layout_width"> 0dp </item>
+        <item name="android:layout_height"> match_parent </item>
+        <item name="android:layout_weight"> 1 </item>
+        <item name="android:button"> @null </item>
+        <item name="android:gravity"> center </item>
+        <item name="android:textSize"> @dimen/txt_10 </item>
+        <item name="android:paddingTop"> @dimen/mar_7 </item>
+        <item name="android:paddingBottom"> @dimen/mar_5 </item>
+        <item name="android:textColor"> @drawable/select_home_text </item>
+    </style>
+
+    <style name="fragment_center_rl">
+        <item name="android:layout_width"> match_parent </item>
+        <item name="android:layout_height"> @dimen/mar_50 </item>
+        <item name="android:background"> @color/white </item>
+    </style>
+
+    <style name="fragment_center_img">
+        <item name="android:layout_width"> wrap_content </item>
+        <item name="android:layout_height"> wrap_content </item>
+        <item name="android:layout_centerVertical"> true </item>
+        <item name="android:layout_marginLeft"> @dimen/mar_15 </item>
+    </style>
+
+    <style name="fragment_center_img_back">
+        <item name="android:layout_width"> wrap_content </item>
+        <item name="android:layout_height"> wrap_content </item>
+        <item name="android:layout_centerVertical"> true </item>
+        <item name="android:layout_alignParentRight"> true </item>
+        <item name="android:layout_marginRight"> @dimen/mar_15 </item>
+        <item name="android:src"> @mipmap/back_r </item>
+    </style>
+
+    <style name="fragment_center_txt">
+        <item name="android:layout_width"> wrap_content </item>
+        <item name="android:layout_height"> wrap_content </item>
+        <item name="android:layout_centerVertical"> true </item>
+        <item name="android:layout_marginLeft"> @dimen/mar_15 </item>
+        <item name="android:textSize"> @dimen/txt_16 </item>
+        <item name="android:textColor"> @color/txt3 </item>
+    </style>
+
+    <style name="ll">
+        <item name="android:layout_width"> match_parent </item>
+        <item name="android:layout_height"> @dimen/mar_1 </item>
+        <item name="android:layout_marginLeft"> @dimen/mar_15 </item>
+        <item name="android:background"> @color/bge </item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="personal_txt">
+        <item name="android:layout_width"> wrap_content </item>
+        <item name="android:layout_height"> wrap_content </item>
+        <item name="android:layout_centerVertical"> true </item>
+        <item name="android:layout_marginLeft"> @dimen/mar_15 </item>
+        <item name="android:textSize"> @dimen/txt_15 </item>
+        <item name="android:textColor"> @color/txt6 </item>
+    </style>
+
+    <style name="personal_txt_r">
+        <item name="android:layout_width"> wrap_content </item>
+        <item name="android:layout_height"> wrap_content </item>
+        <item name="android:layout_centerVertical"> true </item>
+        <item name="android:layout_alignParentRight"> true </item>
+        <item name="android:layout_marginRight"> @dimen/mar_15 </item>
+        <item name="android:textSize"> @dimen/txt_15 </item>
+        <item name="android:textColor"> @color/txtblue </item>
+    </style>
+
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+    <ImageButton
+        android:id="@+id/iv_gsimg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mar_170"
+        android:adjustViewBounds="false"
+        android:background="@null"/>
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/back"
+        android:layout_marginTop="@dimen/mar_33"
+        android:layout_marginLeft="@dimen/mar_15"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/edit"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/mar_33"
+        android:layout_marginRight="@dimen/mar_15"/>
+    
+    <ImageView
+        android:id="@+id/iv_heads"
+        android:layout_width="@dimen/mar_70"
+        android:layout_height="@dimen/mar_70"
+        android:layout_marginTop="@dimen/mar_135"
+        android:src="@mipmap/head"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/mar_15"
+        android:text="用户名233"
+        android:layout_below="@+id/iv_heads"
+        android:textColor="@color/txtf4"
+        android:textSize="@dimen/txt_15"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_name"
+        style="@style/fragment_center_rl"
+        android:layout_below="@+id/tv_username"
+        android:layout_marginTop="@dimen/mar_25">
+
+
+        <TextView
+            style="@style/personal_txt"
+            android:text="姓名"/>
+
+        <TextView
+            style="@style/personal_txt_r"
+            android:text="15674992411"/>
+
+        <TextView
+            style="@style/ll" />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_phone"
+        style="@style/fragment_center_rl"
+        android:layout_below="@+id/rl_name">
+
+
+        <TextView
+            style="@style/personal_txt"
+            android:text="手机号"/>
+
+        <TextView
+            style="@style/personal_txt_r"
+            android:text="15674992411"/>
+
+        <TextView
+            style="@style/ll" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_day"
+        style="@style/fragment_center_rl"
+        android:layout_below="@+id/rl_phone">
+
+
+        <TextView
+            style="@style/personal_txt"
+            android:text="出生日期"/>
+
+        <TextView
+            style="@style/personal_txt_r"
+            android:text="1982.12.13"/>
+
+        <TextView
+            style="@style/ll" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_email"
+        style="@style/fragment_center_rl"
+        android:layout_below="@+id/rl_day">
+
+
+        <TextView
+            style="@style/personal_txt"
+            android:text="电子邮箱"/>
+
+        <TextView
+            style="@style/personal_txt_r"
+            android:text="15674992411@163.com"/>
+
+        <TextView
+            style="@style/ll" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_adress"
+        style="@style/fragment_center_rl"
+        android:layout_below="@+id/rl_email">
+
+
+        <TextView
+            style="@style/personal_txt"
+            android:text="联系地址"/>
+
+        <TextView
+            style="@style/personal_txt_r"
+            android:text="上海市徐汇区石龙路211"/>
+
+        <TextView
+            style="@style/ll" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_pac"
+        style="@style/fragment_center_rl"
+        android:layout_below="@+id/rl_adress">
+
+        <TextView
+            style="@style/personal_txt"
+            android:text="个人认证"/>
+
+        <ImageView
+            style="@style/fragment_center_img_back" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
